@@ -1,0 +1,2647 @@
+{
+  "id": "heldout_same_domain_20261022",
+  "frozen_before_formal_run": true,
+  "design": "Eighteen previously generated small contracts. No method, seed, ranking, or parameter is changed after the controlled study. Stored references come from prior exhaustive enumeration of 4096 recipient subsets per contract.",
+  "case_count": 18,
+  "random_seeds": [
+    91001,
+    91002,
+    91003,
+    91004,
+    91005,
+    91006,
+    91007,
+    91008,
+    91009,
+    91010,
+    91011,
+    91012,
+    91013,
+    91014,
+    91015,
+    91016
+  ],
+  "methods": {
+    "Base": "unchanged input",
+    "CRP": "byte-ordered safe deletion",
+    "FreshRatio": "D01 QoDA-inspired comparator, not QoDA reproduction",
+    "LPOrder": "frozen root-LP order plus checked deletion",
+    "ShareFirst": "D01 sharing-first lexicographic solver control, not iShare or BIGSHARED reproduction",
+    "DeliveryFirst": "delivery-first lexicographic solver control",
+    "Random16": "best and median of sixteen frozen random orders",
+    "RCRP": "one-step rollout over CRP",
+    "JCR": "exact same-domain MILP"
+  },
+  "cases": [
+    {
+      "key": "holdout_known0",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 13.0,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_known0/RESULT.json",
+      "source_sha256": "b834b45de53dc497b6e4f6d811ba0cab299bec3ca6dcf5eaa29cf7c7cc60a478"
+    },
+    {
+      "key": "holdout_known1",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.65,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 21.5,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_known1/RESULT.json",
+      "source_sha256": "7e9de1ff87c3e365237c3a784aa72042d9088c50c4e15fc6f628ffdab94d38eb"
+    },
+    {
+      "key": "holdout_known2",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.75,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 28.0,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_known2/RESULT.json",
+      "source_sha256": "1b80e462d895bfce98eb16eb5600700221bce155442d9f2824cde1af1db8d2ef"
+    },
+    {
+      "key": "holdout_random00",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.9,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          117,
+          334
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          14,
+          15,
+          14,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 22.7,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random00/RESULT.json",
+      "source_sha256": "0806d1556f74ac7361b665371dbb1cf8cb4a70e01aa05d2cb6da0578f7db696f"
+    },
+    {
+      "key": "holdout_random01",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.6111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          143,
+          417
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          15,
+          12,
+          9
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 22.369999999999997,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random01/RESULT.json",
+      "source_sha256": "25d906585e155c30fd33981c2086978e1fc64841ca8254d08988a1a4be0f5ad0"
+    },
+    {
+      "key": "holdout_random02",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          123,
+          359
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          11,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 37.46,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random02/RESULT.json",
+      "source_sha256": "6dbafd890dae3f010c92d39af251ae2dfcd04bda50509542e8866155198cb7d1"
+    },
+    {
+      "key": "holdout_random03",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7833333333333333,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          144,
+          441
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          9,
+          11,
+          15,
+          13
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 28.99,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random03/RESULT.json",
+      "source_sha256": "90dfdc485748b28a979b7531cad76f7aa4317259537524f6b8b346f06765f06c"
+    },
+    {
+      "key": "holdout_random04",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          136,
+          343
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          9,
+          16,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 16.29,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random04/RESULT.json",
+      "source_sha256": "e8f807aeff608d5815b7fc6de2be7c414853e5c6488462d0121f3b85a9ba1747"
+    },
+    {
+      "key": "holdout_random05",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5611111111111111,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          112,
+          318
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          16,
+          9,
+          8,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 29.14,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random05/RESULT.json",
+      "source_sha256": "70fb583987f208f7071fa06cad89521be9b0043e7ab798730a9a706eaf975301"
+    },
+    {
+      "key": "holdout_random06",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.4444444444444444,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          80,
+          280
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          13,
+          8,
+          10,
+          8
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 27.6,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random06/RESULT.json",
+      "source_sha256": "55d75af983e358c33da7d06ea96b1947b8e144a3e3cef8cf119334443b35bda6"
+    },
+    {
+      "key": "holdout_random07",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          105,
+          405
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          13,
+          14,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 21.25,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random07/RESULT.json",
+      "source_sha256": "7f1fae9a81e40560381f7bf27b582526e0e964947c3f918184412304e8908a4c"
+    },
+    {
+      "key": "holdout_random08",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          83,
+          278
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          9,
+          11
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 28.22,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random08/RESULT.json",
+      "source_sha256": "16326a200322697d05d291eee7a2295b5525109270210c04321a6f231e4d4af3"
+    },
+    {
+      "key": "holdout_random09",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.4444444444444444,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          145,
+          443
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          8,
+          8,
+          10,
+          16
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 21.21,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random09/RESULT.json",
+      "source_sha256": "b17bdda959db364a90db5353cbeb20c88ccd926dd12a10e7a046bd0dd8e22c44"
+    },
+    {
+      "key": "holdout_random10",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.6111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          125,
+          298
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          9,
+          8,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 20.69,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random10/RESULT.json",
+      "source_sha256": "a4a66c1ef43e376405d97cbdb6a6a514b30e836ba612889b0579d8687d10adf7"
+    },
+    {
+      "key": "holdout_random11",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          138,
+          409
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          10,
+          16,
+          11
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 33.21,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random11/RESULT.json",
+      "source_sha256": "ccc88b2cc1b227df97ea8fffbb60ce1b244059908e8aab55bb8a892f32ac149b"
+    },
+    {
+      "key": "holdout_random12",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.39444444444444443,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          149,
+          367
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          14,
+          8,
+          10,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 19.5,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random12/RESULT.json",
+      "source_sha256": "2bd765186946287fb97faea6a5252f91264fbcb49384d064cf178193ff2b5841"
+    },
+    {
+      "key": "holdout_random13",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.9,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          111,
+          383
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          16,
+          10,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 23.93,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random13/RESULT.json",
+      "source_sha256": "27a62c680102e51d6077e264e283f1dbb1ef7d8f95464bab83f6a2993299be77"
+    },
+    {
+      "key": "holdout_random14",
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.8333333333333334,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          140,
+          264
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          9,
+          13,
+          13,
+          15
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "reference_optimum": 18.880000000000003,
+      "source_path": "raw_results/rollout_crp_20261022/cases/holdout_random14/RESULT.json",
+      "source_sha256": "cb9313c8629c24a20f7e73dcdc7d4c0e0b04ca3426a6c7b9451bfa8d5003218c"
+    }
+  ]
+}

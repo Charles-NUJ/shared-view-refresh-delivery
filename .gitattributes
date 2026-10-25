@@ -1,0 +1,4 @@
+* text=auto eol=lf
+experiments/**/prepared/** -text whitespace=cr-at-eol
+inputs/** -text whitespace=cr-at-eol
+checks/** -text whitespace=cr-at-eol

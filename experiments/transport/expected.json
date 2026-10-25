@@ -1,0 +1,635 @@
+{
+  "source": "joint_tcp_20261019",
+  "cases": [
+    {
+      "key": "balanced_uniform_FullOnly_Base_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63842
+    },
+    {
+      "key": "balanced_uniform_FullOnly_Base_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63868
+    },
+    {
+      "key": "balanced_uniform_FullOnly_Base_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63890
+    },
+    {
+      "key": "balanced_uniform_FullOnly_CRP_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63842
+    },
+    {
+      "key": "balanced_uniform_FullOnly_CRP_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63868
+    },
+    {
+      "key": "balanced_uniform_FullOnly_CRP_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63890
+    },
+    {
+      "key": "balanced_uniform_FullOnly_JCR_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63842
+    },
+    {
+      "key": "balanced_uniform_FullOnly_JCR_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63868
+    },
+    {
+      "key": "balanced_uniform_FullOnly_JCR_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 63890
+    },
+    {
+      "key": "balanced_split_FullOnly_Base_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 64782
+    },
+    {
+      "key": "balanced_split_FullOnly_Base_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 64808
+    },
+    {
+      "key": "balanced_split_FullOnly_Base_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 64826
+    },
+    {
+      "key": "balanced_split_FullOnly_CRP_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23075
+    },
+    {
+      "key": "balanced_split_FullOnly_CRP_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23087
+    },
+    {
+      "key": "balanced_split_FullOnly_CRP_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23097
+    },
+    {
+      "key": "balanced_split_FullOnly_JCR_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23075
+    },
+    {
+      "key": "balanced_split_FullOnly_JCR_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23087
+    },
+    {
+      "key": "balanced_split_FullOnly_JCR_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        45,
+        48,
+        44,
+        48,
+        48,
+        48,
+        46,
+        48
+      ],
+      "payload_bytes": 23097
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_Base_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        45,
+        48,
+        48,
+        48,
+        45
+      ],
+      "payload_bytes": 43504
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_Base_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        45,
+        48,
+        48,
+        48,
+        45
+      ],
+      "payload_bytes": 43534
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_Base_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        48,
+        48,
+        45,
+        48,
+        48,
+        48,
+        45
+      ],
+      "payload_bytes": 43532
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_CRP_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43060
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_CRP_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43090
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_CRP_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43088
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_JCR_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43060
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_JCR_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43090
+    },
+    {
+      "key": "skewed_uniform_ViewOnly_JCR_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        48,
+        44,
+        46,
+        45,
+        48,
+        44,
+        46,
+        45
+      ],
+      "payload_bytes": 43088
+    },
+    {
+      "key": "skewed_split_FullOnly_Base_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 106394
+    },
+    {
+      "key": "skewed_split_FullOnly_Base_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 106442
+    },
+    {
+      "key": "skewed_split_FullOnly_Base_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "payload_bytes": 106468
+    },
+    {
+      "key": "skewed_split_FullOnly_CRP_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        44,
+        48
+      ],
+      "payload_bytes": 23678
+    },
+    {
+      "key": "skewed_split_FullOnly_CRP_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        44,
+        48
+      ],
+      "payload_bytes": 23690
+    },
+    {
+      "key": "skewed_split_FullOnly_CRP_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        44,
+        48
+      ],
+      "payload_bytes": 23700
+    },
+    {
+      "key": "skewed_split_FullOnly_JCR_7101",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        48,
+        48
+      ],
+      "payload_bytes": 23678
+    },
+    {
+      "key": "skewed_split_FullOnly_JCR_7102",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        48,
+        48
+      ],
+      "payload_bytes": 23690
+    },
+    {
+      "key": "skewed_split_FullOnly_JCR_7103",
+      "status": "CERTIFIED",
+      "counts": [
+        44,
+        44,
+        47,
+        45,
+        46,
+        46,
+        48,
+        48
+      ],
+      "payload_bytes": 23700
+    },
+    {
+      "key": "fault_NACK_7101",
+      "status": "REVOKED",
+      "counts": [
+        3,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    },
+    {
+      "key": "fault_NACK_7102",
+      "status": "REVOKED",
+      "counts": [
+        3,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    },
+    {
+      "key": "fault_NACK_7103",
+      "status": "REVOKED",
+      "counts": [
+        3,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    },
+    {
+      "key": "fault_ACK_HOLD_7101",
+      "status": "REVOKED",
+      "counts": [
+        8,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    },
+    {
+      "key": "fault_ACK_HOLD_7102",
+      "status": "REVOKED",
+      "counts": [
+        8,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    },
+    {
+      "key": "fault_ACK_HOLD_7103",
+      "status": "REVOKED",
+      "counts": [
+        8,
+        14,
+        15,
+        21,
+        7,
+        13,
+        19,
+        25
+      ],
+      "payload_bytes": 360
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "source": "rollout_crp_20261022",
+  "cases": [
+    {
+      "key": "design_u01",
+      "CRP": 16.338134765625,
+      "RCRP": 16.338134765625,
+      "reference": 16.338134765625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u02",
+      "CRP": 19.3056640625,
+      "RCRP": 19.3056640625,
+      "reference": 19.3056640625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u03",
+      "CRP": 21.67333984375,
+      "RCRP": 21.67333984375,
+      "reference": 21.67333984375,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u04",
+      "CRP": 27.55078125,
+      "RCRP": 25.55078125,
+      "reference": 25.55078125,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u05",
+      "CRP": 30.12109375,
+      "RCRP": 30.12109375,
+      "reference": 30.12109375,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u06",
+      "CRP": 36.181640625,
+      "RCRP": 36.181640625,
+      "reference": 36.181640625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u07",
+      "CRP": 23.3056640625,
+      "RCRP": 23.3056640625,
+      "reference": 23.3056640625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u08",
+      "CRP": 27.518310546875,
+      "RCRP": 22.518310546875,
+      "reference": 22.518310546875,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u09",
+      "CRP": 36.926025390625,
+      "RCRP": 36.926025390625,
+      "reference": 36.926025390625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u10",
+      "CRP": 30.885986328125,
+      "RCRP": 28.885986328125,
+      "reference": 28.885986328125,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u11",
+      "CRP": 40.30126953125,
+      "RCRP": 40.30126953125,
+      "reference": 40.30126953125,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "design_u12",
+      "CRP": 48.181640625,
+      "RCRP": 48.181640625,
+      "reference": 48.181640625,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_known0",
+      "CRP": 13.0,
+      "RCRP": 13.0,
+      "reference": 13.0,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_known1",
+      "CRP": 22.5,
+      "RCRP": 21.5,
+      "reference": 21.5,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_known2",
+      "CRP": 28.0,
+      "RCRP": 28.0,
+      "reference": 28.0,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random00",
+      "CRP": 22.7,
+      "RCRP": 22.7,
+      "reference": 22.7,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random01",
+      "CRP": 25.369999999999997,
+      "RCRP": 22.369999999999997,
+      "reference": 22.369999999999997,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random02",
+      "CRP": 37.46,
+      "RCRP": 37.46,
+      "reference": 37.46,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random03",
+      "CRP": 28.990000000000002,
+      "RCRP": 28.99,
+      "reference": 28.99,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random04",
+      "CRP": 19.29,
+      "RCRP": 16.29,
+      "reference": 16.29,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random05",
+      "CRP": 29.14,
+      "RCRP": 29.14,
+      "reference": 29.14,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random06",
+      "CRP": 27.600000000000005,
+      "RCRP": 27.600000000000005,
+      "reference": 27.6,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random07",
+      "CRP": 21.25,
+      "RCRP": 21.25,
+      "reference": 21.25,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random08",
+      "CRP": 28.22,
+      "RCRP": 28.22,
+      "reference": 28.22,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random09",
+      "CRP": 22.21,
+      "RCRP": 21.21,
+      "reference": 21.21,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random10",
+      "CRP": 20.69,
+      "RCRP": 20.69,
+      "reference": 20.69,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random11",
+      "CRP": 33.21,
+      "RCRP": 33.21,
+      "reference": 33.21,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random12",
+      "CRP": 19.5,
+      "RCRP": 19.5,
+      "reference": 19.5,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random13",
+      "CRP": 23.93,
+      "RCRP": 23.93,
+      "reference": 23.93,
+      "dominates_CRP": true,
+      "matches_reference": true
+    },
+    {
+      "key": "holdout_random14",
+      "CRP": 18.88,
+      "RCRP": 18.88,
+      "reference": 18.880000000000003,
+      "dominates_CRP": true,
+      "matches_reference": true
+    }
+  ]
+}

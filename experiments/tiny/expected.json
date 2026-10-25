@@ -1,0 +1,149 @@
+{
+  "source": "joint_validation_20261019",
+  "cases": [
+    {
+      "key": "known0",
+      "subsets": 4096,
+      "feasible": 1296,
+      "enumerated_optimum": 13.0,
+      "MIP_objective": 13.0,
+      "MIP_status": 0
+    },
+    {
+      "key": "known1",
+      "subsets": 4096,
+      "feasible": 240,
+      "enumerated_optimum": 21.5,
+      "MIP_objective": 21.5,
+      "MIP_status": 0
+    },
+    {
+      "key": "known2",
+      "subsets": 4096,
+      "feasible": 40,
+      "enumerated_optimum": 28.0,
+      "MIP_objective": 28.0,
+      "MIP_status": 0
+    },
+    {
+      "key": "random00",
+      "subsets": 4096,
+      "feasible": 32,
+      "enumerated_optimum": 22.7,
+      "MIP_objective": 22.7,
+      "MIP_status": 0
+    },
+    {
+      "key": "random01",
+      "subsets": 4096,
+      "feasible": 432,
+      "enumerated_optimum": 22.369999999999997,
+      "MIP_objective": 22.369999999999997,
+      "MIP_status": 0
+    },
+    {
+      "key": "random02",
+      "subsets": 4096,
+      "feasible": 4,
+      "enumerated_optimum": 37.46,
+      "MIP_objective": 37.46,
+      "MIP_status": 0
+    },
+    {
+      "key": "random03",
+      "subsets": 4096,
+      "feasible": 48,
+      "enumerated_optimum": 28.99,
+      "MIP_objective": 28.990000000000002,
+      "MIP_status": 0
+    },
+    {
+      "key": "random04",
+      "subsets": 4096,
+      "feasible": 896,
+      "enumerated_optimum": 16.29,
+      "MIP_objective": 16.29,
+      "MIP_status": 0
+    },
+    {
+      "key": "random05",
+      "subsets": 4096,
+      "feasible": 32,
+      "enumerated_optimum": 29.14,
+      "MIP_objective": 29.14,
+      "MIP_status": 0
+    },
+    {
+      "key": "random06",
+      "subsets": 4096,
+      "feasible": 48,
+      "enumerated_optimum": 27.6,
+      "MIP_objective": 27.6,
+      "MIP_status": 0
+    },
+    {
+      "key": "random07",
+      "subsets": 4096,
+      "feasible": 216,
+      "enumerated_optimum": 21.25,
+      "MIP_objective": 21.25,
+      "MIP_status": 0
+    },
+    {
+      "key": "random08",
+      "subsets": 4096,
+      "feasible": 8,
+      "enumerated_optimum": 28.22,
+      "MIP_objective": 28.22,
+      "MIP_status": 0
+    },
+    {
+      "key": "random09",
+      "subsets": 4096,
+      "feasible": 336,
+      "enumerated_optimum": 21.21,
+      "MIP_objective": 21.21,
+      "MIP_status": 0
+    },
+    {
+      "key": "random10",
+      "subsets": 4096,
+      "feasible": 120,
+      "enumerated_optimum": 20.69,
+      "MIP_objective": 20.69,
+      "MIP_status": 0
+    },
+    {
+      "key": "random11",
+      "subsets": 4096,
+      "feasible": 72,
+      "enumerated_optimum": 33.21,
+      "MIP_objective": 33.209999999999994,
+      "MIP_status": 0
+    },
+    {
+      "key": "random12",
+      "subsets": 4096,
+      "feasible": 480,
+      "enumerated_optimum": 19.5,
+      "MIP_objective": 19.5,
+      "MIP_status": 0
+    },
+    {
+      "key": "random13",
+      "subsets": 4096,
+      "feasible": 32,
+      "enumerated_optimum": 23.93,
+      "MIP_objective": 23.93,
+      "MIP_status": 0
+    },
+    {
+      "key": "random14",
+      "subsets": 4096,
+      "feasible": 110,
+      "enumerated_optimum": 18.880000000000003,
+      "MIP_objective": 18.880000000000003,
+      "MIP_status": 0
+    }
+  ]
+}

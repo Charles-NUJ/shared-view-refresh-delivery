@@ -1,0 +1,291 @@
+{
+  "source": "feedback_jcr_20261019",
+  "cases": [
+    {
+      "key": "f01",
+      "methods": {
+        "Static_JCR": 16.338134765625,
+        "Calibrated_CRP": 16.338134765625,
+        "Cost_only_repair": 16.338134765625,
+        "Feedback_Price_JCR": 16.338134765625,
+        "Calibrated_JCR": 16.338134765625,
+        "Oracle_JCR": 16.338134765625
+      }
+    },
+    {
+      "key": "f02",
+      "methods": {
+        "Static_JCR": 19.3056640625,
+        "Calibrated_CRP": 19.3056640625,
+        "Cost_only_repair": 19.3056640625,
+        "Feedback_Price_JCR": 19.3056640625,
+        "Calibrated_JCR": 19.3056640625,
+        "Oracle_JCR": 19.3056640625
+      }
+    },
+    {
+      "key": "f03",
+      "methods": {
+        "Static_JCR": 21.67333984375,
+        "Calibrated_CRP": 21.67333984375,
+        "Cost_only_repair": 21.67333984375,
+        "Feedback_Price_JCR": 21.67333984375,
+        "Calibrated_JCR": 21.67333984375,
+        "Oracle_JCR": 21.67333984375
+      }
+    },
+    {
+      "key": "f04",
+      "methods": {
+        "Static_JCR": 25.55078125,
+        "Calibrated_CRP": 27.55078125,
+        "Cost_only_repair": 25.55078125,
+        "Feedback_Price_JCR": 25.55078125,
+        "Calibrated_JCR": 25.55078125,
+        "Oracle_JCR": 25.55078125
+      }
+    },
+    {
+      "key": "f05",
+      "methods": {
+        "Static_JCR": 30.12109375,
+        "Calibrated_CRP": 30.12109375,
+        "Cost_only_repair": 30.12109375,
+        "Feedback_Price_JCR": 30.12109375,
+        "Calibrated_JCR": 30.12109375,
+        "Oracle_JCR": 30.12109375
+      }
+    },
+    {
+      "key": "f06",
+      "methods": {
+        "Static_JCR": 36.181640625,
+        "Calibrated_CRP": 36.181640625,
+        "Cost_only_repair": 36.181640625,
+        "Feedback_Price_JCR": 36.181640625,
+        "Calibrated_JCR": 36.181640625,
+        "Oracle_JCR": 36.181640625
+      }
+    },
+    {
+      "key": "f07",
+      "methods": {
+        "Static_JCR": 20.3056640625,
+        "Calibrated_CRP": 20.3056640625,
+        "Cost_only_repair": 20.3056640625,
+        "Feedback_Price_JCR": 20.3056640625,
+        "Calibrated_JCR": 20.3056640625,
+        "Oracle_JCR": 20.3056640625
+      }
+    },
+    {
+      "key": "f08",
+      "methods": {
+        "Static_JCR": 22.3056640625,
+        "Calibrated_CRP": 22.3056640625,
+        "Cost_only_repair": 22.3056640625,
+        "Feedback_Price_JCR": 22.3056640625,
+        "Calibrated_JCR": 22.3056640625,
+        "Oracle_JCR": 22.3056640625
+      }
+    },
+    {
+      "key": "f09",
+      "methods": {
+        "Static_JCR": 23.3056640625,
+        "Calibrated_CRP": 23.3056640625,
+        "Cost_only_repair": 23.3056640625,
+        "Feedback_Price_JCR": 23.3056640625,
+        "Calibrated_JCR": 23.3056640625,
+        "Oracle_JCR": 23.3056640625
+      }
+    },
+    {
+      "key": "f10",
+      "methods": {
+        "Static_JCR": 19.518310546875,
+        "Calibrated_CRP": 21.518310546875,
+        "Cost_only_repair": 19.518310546875,
+        "Feedback_Price_JCR": 19.518310546875,
+        "Calibrated_JCR": 19.518310546875,
+        "Oracle_JCR": 19.518310546875
+      }
+    },
+    {
+      "key": "f11",
+      "methods": {
+        "Static_JCR": 21.518310546875,
+        "Calibrated_CRP": 25.518310546875,
+        "Cost_only_repair": 21.518310546875,
+        "Feedback_Price_JCR": 21.518310546875,
+        "Calibrated_JCR": 21.518310546875,
+        "Oracle_JCR": 21.518310546875
+      }
+    },
+    {
+      "key": "f12",
+      "methods": {
+        "Static_JCR": 22.518310546875,
+        "Calibrated_CRP": 27.518310546875,
+        "Cost_only_repair": 22.518310546875,
+        "Feedback_Price_JCR": 22.518310546875,
+        "Calibrated_JCR": 22.518310546875,
+        "Oracle_JCR": 22.518310546875
+      }
+    },
+    {
+      "key": "f13",
+      "methods": {
+        "Static_JCR": 30.926025390625,
+        "Calibrated_CRP": 30.926025390625,
+        "Cost_only_repair": 30.926025390625,
+        "Feedback_Price_JCR": 30.926025390625,
+        "Calibrated_JCR": 30.926025390625,
+        "Oracle_JCR": 30.926025390625
+      }
+    },
+    {
+      "key": "f14",
+      "methods": {
+        "Static_JCR": 34.926025390625,
+        "Calibrated_CRP": 34.926025390625,
+        "Cost_only_repair": 34.926025390625,
+        "Feedback_Price_JCR": 34.926025390625,
+        "Calibrated_JCR": 34.926025390625,
+        "Oracle_JCR": 34.926025390625
+      }
+    },
+    {
+      "key": "f15",
+      "methods": {
+        "Static_JCR": 36.926025390625,
+        "Calibrated_CRP": 36.926025390625,
+        "Cost_only_repair": 36.926025390625,
+        "Feedback_Price_JCR": 36.926025390625,
+        "Calibrated_JCR": 36.926025390625,
+        "Oracle_JCR": 36.926025390625
+      }
+    },
+    {
+      "key": "f16",
+      "methods": {
+        "Static_JCR": 25.885986328125,
+        "Calibrated_CRP": 27.885986328125,
+        "Cost_only_repair": 26.91845703125,
+        "Feedback_Price_JCR": 25.885986328125,
+        "Calibrated_JCR": 25.885986328125,
+        "Oracle_JCR": 25.885986328125
+      }
+    },
+    {
+      "key": "f17",
+      "methods": {
+        "Static_JCR": 27.885986328125,
+        "Calibrated_CRP": 29.885986328125,
+        "Cost_only_repair": 28.91845703125,
+        "Feedback_Price_JCR": 27.885986328125,
+        "Calibrated_JCR": 27.885986328125,
+        "Oracle_JCR": 27.885986328125
+      }
+    },
+    {
+      "key": "f18",
+      "methods": {
+        "Static_JCR": 28.885986328125,
+        "Calibrated_CRP": 30.885986328125,
+        "Cost_only_repair": 29.91845703125,
+        "Feedback_Price_JCR": 28.885986328125,
+        "Calibrated_JCR": 28.885986328125,
+        "Oracle_JCR": 28.885986328125
+      }
+    },
+    {
+      "key": "f19",
+      "methods": {
+        "Static_JCR": 34.30126953125,
+        "Calibrated_CRP": 34.30126953125,
+        "Cost_only_repair": 34.30126953125,
+        "Feedback_Price_JCR": 34.30126953125,
+        "Calibrated_JCR": 34.30126953125,
+        "Oracle_JCR": 34.30126953125
+      }
+    },
+    {
+      "key": "f20",
+      "methods": {
+        "Static_JCR": 38.30126953125,
+        "Calibrated_CRP": 38.30126953125,
+        "Cost_only_repair": 38.30126953125,
+        "Feedback_Price_JCR": 38.30126953125,
+        "Calibrated_JCR": 38.30126953125,
+        "Oracle_JCR": 38.30126953125
+      }
+    },
+    {
+      "key": "f21",
+      "methods": {
+        "Static_JCR": 40.30126953125,
+        "Calibrated_CRP": 40.30126953125,
+        "Cost_only_repair": 40.30126953125,
+        "Feedback_Price_JCR": 40.30126953125,
+        "Calibrated_JCR": 40.30126953125,
+        "Oracle_JCR": 40.30126953125
+      }
+    },
+    {
+      "key": "f22",
+      "methods": {
+        "Static_JCR": 39.181640625,
+        "Calibrated_CRP": 39.181640625,
+        "Cost_only_repair": 39.181640625,
+        "Feedback_Price_JCR": 39.181640625,
+        "Calibrated_JCR": 39.181640625,
+        "Oracle_JCR": 39.181640625
+      }
+    },
+    {
+      "key": "f23",
+      "methods": {
+        "Static_JCR": 45.181640625,
+        "Calibrated_CRP": 45.181640625,
+        "Cost_only_repair": 45.181640625,
+        "Feedback_Price_JCR": 45.181640625,
+        "Calibrated_JCR": 45.181640625,
+        "Oracle_JCR": 45.181640625
+      }
+    },
+    {
+      "key": "f24",
+      "methods": {
+        "Static_JCR": 48.181640625,
+        "Calibrated_CRP": 48.181640625,
+        "Cost_only_repair": 48.181640625,
+        "Feedback_Price_JCR": 48.181640625,
+        "Calibrated_JCR": 48.181640625,
+        "Oracle_JCR": 48.181640625
+      }
+    },
+    {
+      "key": "scale2",
+      "methods": {
+        "Static_JCR": 33.77197265625,
+        "Calibrated_CRP": 35.77197265625,
+        "Cost_only_repair": 34.8369140625,
+        "Feedback_Price_JCR": 33.77197265625,
+        "Calibrated_JCR": 33.77197265625,
+        "Oracle_JCR": 33.77197265625
+      }
+    },
+    {
+      "key": "scale4",
+      "methods": {
+        "Static_JCR": 49.5439453125,
+        "Calibrated_CRP": 51.5439453125,
+        "Cost_only_repair": 50.673828125,
+        "Feedback_Price_JCR": 49.5439453125,
+        "Calibrated_JCR": 49.5439453125,
+        "Oracle_JCR": 49.5439453125
+      }
+    }
+  ]
+}

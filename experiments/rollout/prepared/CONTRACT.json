@@ -1,0 +1,6152 @@
+{
+  "id": "rollout_crp_20261022",
+  "frozen_before_formal_run": true,
+  "algorithm": "Base CRP plus every feasible first recipient deletion followed by unchanged CRP; return cheapest checked branch.",
+  "questions": [
+    "Does RCRP ever cost more than its CRP base?",
+    "How often does it reach an independently stored exact reference?",
+    "Can one-step rollout cross the three ordering barriers seen during design?"
+  ],
+  "claim_boundary": "Policy improvement only. Exactness is empirical per reference case; no global approximation ratio, solver speed, independent workload, or production claim.",
+  "case_counts": {
+    "design_seen": 12,
+    "held_out": 18
+  },
+  "cases": [
+    {
+      "key": "design_u01",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 16.338134765625,
+      "configuration": {
+        "key": "balanced_loose_split",
+        "cpu_profile": "balanced",
+        "lag_profile": "loose_split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          30,
+          36,
+          42,
+          28,
+          34,
+          40,
+          46
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 24,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 19,
+          "start": 24,
+          "end": 25,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 19,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 19,
+          "start": 26,
+          "end": 27,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 19,
+          "start": 27,
+          "end": 28,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 39,
+          "start": 39,
+          "end": 44,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 39,
+          "start": 44,
+          "end": 45,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 39,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 39,
+          "start": 46,
+          "end": 47,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 39,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u01/RESULT.json",
+      "source_sha256": "387dac81470f3832e65a062a624e8b1e84f288197a0c2334593fe19d40d36fea"
+    },
+    {
+      "key": "design_u02",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 19.3056640625,
+      "configuration": {
+        "key": "balanced_loose_split",
+        "cpu_profile": "balanced",
+        "lag_profile": "loose_split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          30,
+          36,
+          42,
+          28,
+          34,
+          40,
+          46
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 21,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 21,
+          "start": 21,
+          "end": 23,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 19,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 23,
+          "start": 23,
+          "end": 25,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 21,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 25,
+          "start": 25,
+          "end": 27,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 23,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 25,
+          "start": 27,
+          "end": 28,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 41,
+          "start": 41,
+          "end": 43,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 43,
+          "start": 43,
+          "end": 45,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 41,
+          "start": 43,
+          "end": 44,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 45,
+          "start": 45,
+          "end": 47,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 43,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 47,
+          "start": 47,
+          "end": 49,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 45,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 47,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u02/RESULT.json",
+      "source_sha256": "50bc0f62e91dd10afd1b19c77ec649344464c95546846b4ecf75797b7af639b8"
+    },
+    {
+      "key": "design_u03",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 21.67333984375,
+      "configuration": {
+        "key": "balanced_split",
+        "cpu_profile": "balanced",
+        "lag_profile": "split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          18,
+          24,
+          30,
+          36,
+          22,
+          28,
+          34,
+          40
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 18,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 18,
+          "end": 19,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 19,
+          "end": 20,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 13,
+          "start": 20,
+          "end": 21,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 13,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 27,
+          "start": 27,
+          "end": 32,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 27,
+          "start": 32,
+          "end": 33,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 27,
+          "start": 33,
+          "end": 34,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 27,
+          "start": 34,
+          "end": 35,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 27,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 41,
+          "start": 41,
+          "end": 46,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 41,
+          "start": 46,
+          "end": 47,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 41,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 41,
+          "start": 48,
+          "end": 49,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 41,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 55,
+          "start": 55,
+          "end": 60,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 55,
+          "start": 60,
+          "end": 61,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 55,
+          "start": 61,
+          "end": 62,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 55,
+          "start": 62,
+          "end": 63,
+          "recipients": [
+            2,
+            6
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u03/RESULT.json",
+      "source_sha256": "6870ec33ab7d3dc4b73bafab04791bef546cb69c33e919e1b3d06a11e91a3033"
+    },
+    {
+      "key": "design_u04",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 25.55078125,
+      "configuration": {
+        "key": "balanced_split",
+        "cpu_profile": "balanced",
+        "lag_profile": "split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          18,
+          24,
+          30,
+          36,
+          22,
+          28,
+          34,
+          40
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 15,
+          "start": 15,
+          "end": 17,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 17,
+          "start": 17,
+          "end": 19,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 15,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 21,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 17,
+          "start": 19,
+          "end": 20,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 21,
+          "start": 21,
+          "end": 23,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 19,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 21,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 31,
+          "start": 31,
+          "end": 33,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 33,
+          "start": 33,
+          "end": 35,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 31,
+          "start": 33,
+          "end": 34,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 35,
+          "start": 35,
+          "end": 37,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 33,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 37,
+          "start": 37,
+          "end": 39,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 35,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 37,
+          "start": 39,
+          "end": 40,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 47,
+          "start": 47,
+          "end": 49,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 49,
+          "start": 49,
+          "end": 51,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 47,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 51,
+          "start": 51,
+          "end": 53,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 49,
+          "start": 51,
+          "end": 52,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 53,
+          "start": 53,
+          "end": 55,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 51,
+          "start": 53,
+          "end": 54,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 53,
+          "start": 55,
+          "end": 56,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u04/RESULT.json",
+      "source_sha256": "29b25522a9d8707dfa007f775b408c1de4b51496a2f22c160930aee57f0fcdce"
+    },
+    {
+      "key": "design_u05",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 30.12109375,
+      "configuration": {
+        "key": "balanced_uniform",
+        "cpu_profile": "balanced",
+        "lag_profile": "uniform",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 21,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 21,
+          "start": 21,
+          "end": 23,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 19,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 23,
+          "start": 23,
+          "end": 25,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 21,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 25,
+          "start": 25,
+          "end": 27,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 23,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 25,
+          "start": 27,
+          "end": 28,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 41,
+          "start": 41,
+          "end": 43,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 43,
+          "start": 43,
+          "end": 45,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 41,
+          "start": 43,
+          "end": 44,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 45,
+          "start": 45,
+          "end": 47,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 43,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 47,
+          "start": 47,
+          "end": 49,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 45,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 47,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u05/RESULT.json",
+      "source_sha256": "e614ed4fc42daa62d3d70b061ad1c90fc49654d38921f231aa34aad48c0086c1"
+    },
+    {
+      "key": "design_u06",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 36.181640625,
+      "configuration": {
+        "key": "balanced_uniform",
+        "cpu_profile": "balanced",
+        "lag_profile": "uniform",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 11,
+          "start": 11,
+          "end": 16,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 11,
+          "start": 16,
+          "end": 17,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 11,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 11,
+          "start": 18,
+          "end": 19,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 11,
+          "start": 19,
+          "end": 20,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 27,
+          "start": 27,
+          "end": 32,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 27,
+          "start": 32,
+          "end": 33,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 27,
+          "start": 33,
+          "end": 34,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 27,
+          "start": 34,
+          "end": 35,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 27,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 43,
+          "start": 43,
+          "end": 48,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 43,
+          "start": 48,
+          "end": 49,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 43,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 43,
+          "start": 50,
+          "end": 51,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 43,
+          "start": 51,
+          "end": 52,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u06/RESULT.json",
+      "source_sha256": "f7301bcdb0fc66f5104fe911a4e0a081822c6f2795f921432434d7a1165c60bd"
+    },
+    {
+      "key": "design_u07",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 23.3056640625,
+      "configuration": {
+        "key": "skewed_loose_split",
+        "cpu_profile": "skewed",
+        "lag_profile": "loose_split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          30,
+          36,
+          42,
+          28,
+          34,
+          40,
+          46
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 21,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 21,
+          "start": 21,
+          "end": 23,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 19,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 23,
+          "start": 23,
+          "end": 25,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 21,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 25,
+          "start": 25,
+          "end": 31,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 23,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 25,
+          "start": 31,
+          "end": 32,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 41,
+          "start": 41,
+          "end": 43,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 43,
+          "start": 43,
+          "end": 45,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 41,
+          "start": 43,
+          "end": 44,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 45,
+          "start": 45,
+          "end": 47,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 43,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 47,
+          "start": 47,
+          "end": 53,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 45,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 47,
+          "start": 53,
+          "end": 54,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u07/RESULT.json",
+      "source_sha256": "b02d698acd619a4786eb3a79ca43b9ec63691b9bca5b730eeec272139e276ef0"
+    },
+    {
+      "key": "design_u08",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 22.518310546875,
+      "configuration": {
+        "key": "skewed_loose_split",
+        "cpu_profile": "skewed",
+        "lag_profile": "loose_split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          30,
+          36,
+          42,
+          28,
+          34,
+          40,
+          46
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 22,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 22,
+          "end": 23,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 13,
+          "start": 24,
+          "end": 25,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 13,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 27,
+          "start": 27,
+          "end": 36,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 27,
+          "start": 36,
+          "end": 37,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 27,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 27,
+          "start": 38,
+          "end": 39,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 27,
+          "start": 39,
+          "end": 40,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 41,
+          "start": 41,
+          "end": 50,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 41,
+          "start": 50,
+          "end": 51,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 41,
+          "start": 51,
+          "end": 52,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 41,
+          "start": 52,
+          "end": 53,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 41,
+          "start": 53,
+          "end": 54,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u08/RESULT.json",
+      "source_sha256": "1179876e8732845d2bd331eb7835924104026d638ae0950824ca9c7a6a737a89"
+    },
+    {
+      "key": "design_u09",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 36.926025390625,
+      "configuration": {
+        "key": "skewed_split",
+        "cpu_profile": "skewed",
+        "lag_profile": "split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          18,
+          24,
+          30,
+          36,
+          22,
+          28,
+          34,
+          40
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 15,
+          "start": 15,
+          "end": 17,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 17,
+          "start": 17,
+          "end": 19,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 15,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 21,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 17,
+          "start": 19,
+          "end": 20,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 21,
+          "start": 21,
+          "end": 27,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 19,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 21,
+          "start": 27,
+          "end": 28,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 33,
+          "start": 33,
+          "end": 35,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 35,
+          "start": 35,
+          "end": 37,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 33,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 37,
+          "start": 37,
+          "end": 39,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 35,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 39,
+          "start": 39,
+          "end": 45,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 37,
+          "start": 39,
+          "end": 40,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 39,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 51,
+          "start": 51,
+          "end": 53,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 53,
+          "start": 53,
+          "end": 55,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 51,
+          "start": 53,
+          "end": 54,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 55,
+          "start": 55,
+          "end": 57,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 53,
+          "start": 55,
+          "end": 56,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 57,
+          "start": 57,
+          "end": 63,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 55,
+          "start": 57,
+          "end": 58,
+          "recipients": [
+            2,
+            6
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u09/RESULT.json",
+      "source_sha256": "a0746902bfe7df209f0185baab9e138a023f838b1e2b25e23b1fd54b54ad28c5"
+    },
+    {
+      "key": "design_u10",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 28.885986328125,
+      "configuration": {
+        "key": "skewed_split",
+        "cpu_profile": "skewed",
+        "lag_profile": "split",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          18,
+          24,
+          30,
+          36,
+          22,
+          28,
+          34,
+          40
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 5,
+          "start": 5,
+          "end": 14,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 5,
+          "start": 14,
+          "end": 15,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 15,
+          "start": 15,
+          "end": 24,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 5,
+          "start": 15,
+          "end": 16,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 5,
+          "start": 16,
+          "end": 17,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 5,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 15,
+          "start": 24,
+          "end": 25,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 25,
+          "start": 25,
+          "end": 34,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 15,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 15,
+          "start": 26,
+          "end": 27,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 15,
+          "start": 27,
+          "end": 28,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 25,
+          "start": 34,
+          "end": 35,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 35,
+          "start": 35,
+          "end": 44,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 25,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 25,
+          "start": 36,
+          "end": 37,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 25,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 35,
+          "start": 44,
+          "end": 45,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 45,
+          "start": 45,
+          "end": 54,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 35,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 35,
+          "start": 46,
+          "end": 47,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 35,
+          "start": 47,
+          "end": 48,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 45,
+          "start": 54,
+          "end": 55,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 45,
+          "start": 55,
+          "end": 56,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 45,
+          "start": 56,
+          "end": 57,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 45,
+          "start": 57,
+          "end": 58,
+          "recipients": [
+            3,
+            7
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u10/RESULT.json",
+      "source_sha256": "a71355060d6c69ba8e8915711cc42176efdea4aeea56341527891d56b5312be1"
+    },
+    {
+      "key": "design_u11",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 40.30126953125,
+      "configuration": {
+        "key": "skewed_uniform",
+        "cpu_profile": "skewed",
+        "lag_profile": "uniform",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 15,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 15,
+          "start": 15,
+          "end": 17,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 15,
+          "end": 16,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 17,
+          "start": 17,
+          "end": 19,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 15,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 19,
+          "start": 19,
+          "end": 25,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 17,
+          "start": 19,
+          "end": 20,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 19,
+          "start": 25,
+          "end": 26,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 33,
+          "start": 33,
+          "end": 35,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 35,
+          "start": 35,
+          "end": 37,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 33,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 37,
+          "start": 37,
+          "end": 39,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 35,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 39,
+          "start": 39,
+          "end": 45,
+          "views": [
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 37,
+          "start": 39,
+          "end": 40,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 39,
+          "start": 45,
+          "end": 46,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 53,
+          "start": 53,
+          "end": 55,
+          "views": [
+            0
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 55,
+          "start": 55,
+          "end": 57,
+          "views": [
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 53,
+          "start": 55,
+          "end": 56,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 57,
+          "start": 57,
+          "end": 59,
+          "views": [
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 55,
+          "start": 57,
+          "end": 58,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 57,
+          "start": 59,
+          "end": 60,
+          "recipients": [
+            2,
+            6
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u11/RESULT.json",
+      "source_sha256": "e3bdd751b667312f4e06acce3129d9fee03fb791f8ae451d956f89944484ee58"
+    },
+    {
+      "key": "design_u12",
+      "role": "DESIGN_SEEN_MAIN_CALENDAR",
+      "reference_type": "prior_exact_JCR",
+      "reference_optimum": 48.181640625,
+      "configuration": {
+        "key": "skewed_uniform",
+        "cpu_profile": "skewed",
+        "lag_profile": "uniform",
+        "T": 64,
+        "warm": 16,
+        "rho": 0.9,
+        "captures": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ],
+        "startup": 1,
+        "prefix": 1,
+        "suffix": [
+          1,
+          1,
+          1,
+          5
+        ],
+        "views": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lags": [
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "upper": [
+          369,
+          133,
+          133,
+          13825
+        ],
+        "rate": 32768,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.000244140625
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 11,
+          "start": 11,
+          "end": 20,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 11,
+          "start": 20,
+          "end": 21,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 11,
+          "start": 21,
+          "end": 22,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 11,
+          "start": 22,
+          "end": 23,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 11,
+          "start": 23,
+          "end": 24,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 25,
+          "start": 25,
+          "end": 34,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 25,
+          "start": 34,
+          "end": 35,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 25,
+          "start": 35,
+          "end": 36,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 25,
+          "start": 36,
+          "end": 37,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 25,
+          "start": 37,
+          "end": 38,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 39,
+          "start": 39,
+          "end": 48,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 39,
+          "start": 48,
+          "end": 49,
+          "recipients": [
+            0,
+            4
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 39,
+          "start": 49,
+          "end": 50,
+          "recipients": [
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 2,
+          "epoch": 39,
+          "start": 50,
+          "end": 51,
+          "recipients": [
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 3,
+          "epoch": 39,
+          "start": 51,
+          "end": 52,
+          "recipients": [
+            3,
+            7
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 53,
+          "start": 53,
+          "end": 62,
+          "views": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 53,
+          "start": 62,
+          "end": 63,
+          "recipients": [
+            0,
+            4
+          ]
+        }
+      ],
+      "source": "raw_results/joint_calendar_20261019/models/u12/RESULT.json",
+      "source_sha256": "33fdc91b80d4df9593377d30a0c4263669e3bc32cb90cce8b12426ddf69079a9"
+    },
+    {
+      "key": "holdout_known0",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 13.0,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_known1",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 21.5,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.65,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_known2",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 28.0,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.75,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          100,
+          350
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          12,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random00",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 22.7,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.9,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          117,
+          334
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          14,
+          15,
+          14,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random01",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 22.369999999999997,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.6111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          143,
+          417
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          15,
+          12,
+          9
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random02",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 37.46,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          123,
+          359
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          11,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random03",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 28.99,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7833333333333333,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          144,
+          441
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          9,
+          11,
+          15,
+          13
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random04",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 16.29,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          136,
+          343
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          9,
+          16,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random05",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 29.14,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.5611111111111111,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          112,
+          318
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          16,
+          9,
+          8,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random06",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 27.6,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.4444444444444444,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          80,
+          280
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          13,
+          8,
+          10,
+          8
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random07",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 21.25,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          105,
+          405
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          13,
+          14,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random08",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 28.22,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          83,
+          278
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          10,
+          10,
+          9,
+          11
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random09",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 21.21,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.4444444444444444,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          145,
+          443
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          8,
+          8,
+          10,
+          16
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random10",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 20.69,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.6111111111111112,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          125,
+          298
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          9,
+          8,
+          14
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random11",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 33.21,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.7277777777777777,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          138,
+          409
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          15,
+          10,
+          16,
+          11
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random12",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 19.5,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.39444444444444443,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          149,
+          367
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          14,
+          8,
+          10,
+          10
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random13",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 23.93,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.9,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          111,
+          383
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          12,
+          16,
+          10,
+          12
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    },
+    {
+      "key": "holdout_random14",
+      "role": "HELD_OUT_FROM_ROLLOUT_DESIGN",
+      "reference_type": "prior_full_subset_enumeration",
+      "reference_optimum": 18.880000000000003,
+      "configuration": {
+        "T": 24,
+        "warm": 6,
+        "rho": 0.8333333333333334,
+        "prefix": 1,
+        "suffix": [
+          1,
+          2
+        ],
+        "upper": [
+          140,
+          264
+        ],
+        "rate": 500,
+        "views": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "lags": [
+          9,
+          13,
+          13,
+          15
+        ],
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "captures": [
+          1,
+          7,
+          13
+        ],
+        "startup": 1,
+        "cpu_weight": 1.0,
+        "byte_weight": 0.01
+      },
+      "initial": [
+        {
+          "kind": "build",
+          "epoch": 1,
+          "start": 1,
+          "end": 5,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 1,
+          "start": 5,
+          "end": 6,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 1,
+          "start": 6,
+          "end": 8,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 7,
+          "start": 7,
+          "end": 11,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 7,
+          "start": 11,
+          "end": 12,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 7,
+          "start": 12,
+          "end": 14,
+          "recipients": [
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "build",
+          "epoch": 13,
+          "start": 13,
+          "end": 17,
+          "views": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 0,
+          "epoch": 13,
+          "start": 17,
+          "end": 18,
+          "recipients": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "pub",
+          "view": 1,
+          "epoch": 13,
+          "start": 18,
+          "end": 20,
+          "recipients": [
+            1,
+            3
+          ]
+        }
+      ],
+      "source": "raw_results/joint_validation_20261019/prepared/CONTRACT.json",
+      "source_sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca"
+    }
+  ]
+}

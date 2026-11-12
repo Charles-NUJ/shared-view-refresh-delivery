@@ -2,3 +2,11 @@
 experiments/**/prepared/** -text whitespace=cr-at-eol
 inputs/** -text whitespace=cr-at-eol
 checks/** -text whitespace=cr-at-eol
+legacy_joint_calendar/experiments/**/prepared/** -text whitespace=cr-at-eol
+legacy_joint_calendar/inputs/** -text whitespace=cr-at-eol
+legacy_joint_calendar/checks/** -text whitespace=cr-at-eol
+legacy_joint_calendar/SOURCE_MANIFEST.json -text whitespace=cr-at-eol
+artifact/**/expected/** -text whitespace=cr-at-eol
+artifact/two_version_exact/inputs/** -text whitespace=cr-at-eol
+artifact/three_host/*.csv -text whitespace=cr-at-eol
+ARTIFACT_MANIFEST_SHA256.csv -text whitespace=cr-at-eol

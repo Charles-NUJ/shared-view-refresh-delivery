@@ -1,0 +1,83 @@
+{
+  "protocol_id": "three-host-line-example",
+  "purpose": "Three-site SQLite/TCP line study with a causal pressure gate.",
+  "sites": [
+    {
+      "site": 0,
+      "node": "endpoint-a",
+      "role": "endpoint",
+      "python": "/usr/bin/python3",
+      "workdir": "/path/to/private/output-a",
+      "listen_host": "HOST_A",
+      "listen_port": 43110,
+      "expected_peer": "COORDINATOR_ADDRESS"
+    },
+    {
+      "site": 1,
+      "node": "coordinator",
+      "role": "middle_and_coordinator",
+      "python": "python",
+      "workdir": "/path/to/private/coordinator-output",
+      "outbound_address": "COORDINATOR_ADDRESS"
+    },
+    {
+      "site": 2,
+      "node": "endpoint-c",
+      "role": "endpoint",
+      "python": "/usr/bin/python3",
+      "workdir": "/path/to/private/output-c",
+      "listen_host": "HOST_C",
+      "listen_port": 43130,
+      "expected_peer": "COORDINATOR_ADDRESS"
+    }
+  ],
+  "logical_topology": {
+    "type": "line",
+    "edges": [[0, 1], [1, 2]],
+    "connection_initiator": 1,
+    "routing": {
+      "0-1": [0, 1],
+      "1-0": [1, 0],
+      "1-2": [1, 2],
+      "2-1": [2, 1],
+      "0-2": [0, 1, 2],
+      "2-0": [2, 1, 0]
+    }
+  },
+  "workload": {
+    "sites": 3,
+    "versions": 10,
+    "key_count": 3000,
+    "updates_per_version": 300,
+    "chunk_bytes": 4096,
+    "methods": ["adaptive"],
+    "repetitions": [7101, 7102, 7103],
+    "regimes": [
+      {
+        "id": "conservative_clear_1p50",
+        "period_seconds": 1.5,
+        "rate_bytes_per_second_per_logical_link": 3000000
+      }
+    ]
+  },
+  "comparison_contract": {
+    "same_source_rows": true,
+    "same_sql": true,
+    "same_line_topology": true,
+    "same_application_rate_per_logical_link": true,
+    "same_tcp_protocol": true,
+    "same_atomic_installation": true,
+    "single_changed_control": "release period",
+    "active_transfer_preemption": false
+  },
+  "required_outputs_per_session": [
+    "source SQLite databases",
+    "consumer SQLite databases",
+    "coordinator events",
+    "site events",
+    "stdout and stderr",
+    "result JSON",
+    "failure record when applicable"
+  ],
+  "scope_boundary": "When the observed pressure gate remains inactive, the adaptive service rule equals FIFO by construction."
+}

@@ -1,0 +1,50 @@
+{
+  "id": "r60_causal_pressure_gated_value_density_20261112",
+  "question": "Can an observed per-version bottleneck load select FIFO in clear regimes and replacement plus value density in overlap-prone regimes?",
+  "parent_config": "parent_config.json",
+  "archived_cases": null,
+  "frozen_before_run": true,
+  "topologies": ["line6", "ring6", "tree6", "mesh6"],
+  "capacities": [256, 512, 1024],
+  "key_layouts": ["shared_100", "shared_50", "shared_20", "shared_00"],
+  "demand_profiles": {
+    "original": [1, 2, 1, 3, 2, 1],
+    "uniform": [1, 1, 1, 1, 1, 1],
+    "reversed": [1, 2, 3, 1, 2, 1]
+  },
+  "methods": [
+    "fifo_sp",
+    "oldest_sp",
+    "qoda_greedy",
+    "latest_sp",
+    "replacement_fifo",
+    "replacement_qoda",
+    "overlap_gated_closure",
+    "overlap_gated_qoda",
+    "pressure_gated_qoda"
+  ],
+  "primary_method": "pressure_gated_qoda",
+  "primary_profile": "original",
+  "factorial_methods": {
+    "00_no_replacement_fifo": "fifo_sp",
+    "01_no_replacement_value_density": "qoda_greedy",
+    "10_replacement_fifo": "replacement_fifo",
+    "11_replacement_value_density": "replacement_qoda"
+  },
+  "pressure_rule": "After every complete source-release set, compute phi=max_e sum_i declared_bytes_i*1[e in P_i]/(capacity_e*version_period). Once an observed phi is at least one, enable safe replacement and value-density service. Before activation, use FIFO.",
+  "external_order": [
+    "query correctness",
+    "final version installation",
+    "rho=0.9 violation count",
+    "rho=0.9 freshness shortfall",
+    "maximum edge work",
+    "total edge bytes",
+    "completion time"
+  ],
+  "notes": [
+    "All methods receive the same SQL objects, releases, topology, fixed shortest paths, capacities, installation rule, evaluation window, and post-execution score.",
+    "The pressure uses only fully released objects, fixed paths, positive capacity, and the declared version period.",
+    "The threshold one is the physical queue-balance boundary and was fixed before execution.",
+    "The gate is irreversible within one execution, which avoids service-rule oscillation."
+  ]
+}

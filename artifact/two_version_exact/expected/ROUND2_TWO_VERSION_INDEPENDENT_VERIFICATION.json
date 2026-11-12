@@ -1,0 +1,120 @@
+{
+  "state": "PASS",
+  "independent_view": "Recompute every actual schedule from archived bytes/capacities and compare the optimized subset against all eight zero-gap fixed-subset solves.",
+  "errors": [],
+  "case_checks": {
+    "optimized_actual": {
+      "errors": [],
+      "utility": 6,
+      "edge_ticks": 22,
+      "intermediate_destinations": [
+        0
+      ]
+    },
+    "full_refresh_exact_scheduler": {
+      "errors": [],
+      "utility": 6,
+      "edge_ticks": 31,
+      "intermediate_destinations": [
+        0,
+        1,
+        2
+      ]
+    },
+    "final_only_exact_scheduler": {
+      "errors": [],
+      "utility": 3,
+      "edge_ticks": 16,
+      "intermediate_destinations": []
+    },
+    "unit_hop_choice_actual_replay": {
+      "errors": [],
+      "utility": 6,
+      "edge_ticks": 31,
+      "intermediate_destinations": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "subset_optimum": {
+    "utility": 6,
+    "minimum_edge_ticks": 22,
+    "best_intermediate_subsets": [
+      [
+        0
+      ]
+    ]
+  },
+  "unit_hop_claim_under_actual_cost": {
+    "edge_conflicts": [
+      {
+        "edge": "0-1",
+        "tick": 3
+      },
+      {
+        "edge": "0-1",
+        "tick": 4
+      },
+      {
+        "edge": "0-1",
+        "tick": 5
+      },
+      {
+        "edge": "0-1",
+        "tick": 6
+      },
+      {
+        "edge": "0-1",
+        "tick": 6
+      },
+      {
+        "edge": "0-1",
+        "tick": 7
+      },
+      {
+        "edge": "0-1",
+        "tick": 7
+      },
+      {
+        "edge": "0-1",
+        "tick": 8
+      },
+      {
+        "edge": "0-1",
+        "tick": 8
+      },
+      {
+        "edge": "0-1",
+        "tick": 9
+      },
+      {
+        "edge": "0-1",
+        "tick": 9
+      },
+      {
+        "edge": "0-1",
+        "tick": 10
+      }
+    ],
+    "precedence_errors": [
+      {
+        "task": "k01_s0_d2",
+        "hop": 1
+      },
+      {
+        "task": "k02_s0_d2",
+        "hop": 1
+      }
+    ]
+  },
+  "reopened_hashes": {
+    "demand_manifest": "8C29AF164B683789118E776EAAF7EED4E0AF92845A62015BF5549A267C20A5AE",
+    "central_results": "0A93032E753408AED853E84A5CDDE6035AF045BB1EF1B8907537130EA5A85A10",
+    "runner": "EFD99618AA55895E09EAA1212787C1356435D5BB4EE0316927785F28780FF67F",
+    "results": "14A4D474DF602CCD103839C8752E6A0499E703A3374A43CB7CD6CC69C28A6DCB",
+    "subset_enumeration": "4A0CEF018FFDC435E3F8D7589A4B318B63C38F27202AF2D60517E503496D1482",
+    "receipt": "9B6B149654BB80FB63D26C434F7C6268A1F995B094B989F044BA61CA00DB03AF"
+  }
+}

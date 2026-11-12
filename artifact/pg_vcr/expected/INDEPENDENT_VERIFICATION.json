@@ -1,0 +1,114 @@
+{
+  "state": "PASS",
+  "errors": [],
+  "manifest_files_checked": 488,
+  "summary_sha256": "CD42E8877ED3BC9366C30734D5FE7E57D94235FDB67D9B1286D3618C29B8CAFC",
+  "rows": 1296,
+  "unique_cases": 1296,
+  "correctness_or_final_failures": 0,
+  "comparisons": {
+    "original": {
+      "fifo_sp": {
+        "better": 36,
+        "equal": 12
+      },
+      "oldest_sp": {
+        "better": 36,
+        "equal": 12
+      },
+      "qoda_greedy": {
+        "better": 34,
+        "worse": 14
+      },
+      "latest_sp": {
+        "better": 22,
+        "worse": 18,
+        "equal": 8
+      },
+      "replacement_qoda": {
+        "worse": 31,
+        "better": 15,
+        "equal": 2
+      }
+    },
+    "uniform": {
+      "fifo_sp": {
+        "better": 30,
+        "equal": 12,
+        "worse": 6
+      },
+      "oldest_sp": {
+        "better": 30,
+        "equal": 12,
+        "worse": 6
+      },
+      "qoda_greedy": {
+        "better": 33,
+        "worse": 15
+      },
+      "latest_sp": {
+        "better": 13,
+        "worse": 27,
+        "equal": 8
+      },
+      "replacement_qoda": {
+        "worse": 23,
+        "better": 18,
+        "equal": 7
+      }
+    },
+    "reversed": {
+      "fifo_sp": {
+        "better": 36,
+        "equal": 12
+      },
+      "oldest_sp": {
+        "better": 36,
+        "equal": 12
+      },
+      "qoda_greedy": {
+        "better": 33,
+        "worse": 15
+      },
+      "latest_sp": {
+        "better": 20,
+        "worse": 20,
+        "equal": 8
+      },
+      "replacement_qoda": {
+        "worse": 31,
+        "better": 14,
+        "equal": 3
+      }
+    }
+  },
+  "factor_counts": {
+    "replacement_under_fifo": {
+      "better": 54,
+      "worse": 66,
+      "equal": 24
+    },
+    "value_density_without_replacement": {
+      "better": 107,
+      "worse": 37
+    },
+    "joint_vs_fifo": {
+      "better": 114,
+      "worse": 30
+    },
+    "joint_vs_replacement_only": {
+      "better": 115,
+      "worse": 29
+    },
+    "joint_vs_value_density_only": {
+      "better": 109,
+      "equal": 13,
+      "worse": 22
+    }
+  },
+  "pressure_cases_checked": 48,
+  "pressure_gate_activated": 36,
+  "pressure_gate_inactive": 12,
+  "archive_replay_checks": 192,
+  "archive_replay_errors": 0
+}

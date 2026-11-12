@@ -1,0 +1,85 @@
+[
+  {
+    "intermediate_destinations": [],
+    "weighted_fresh_tick_utility": 3,
+    "physical_edge_ticks": 16,
+    "physical_edge_bytes": 4261,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      0
+    ],
+    "weighted_fresh_tick_utility": 6,
+    "physical_edge_ticks": 22,
+    "physical_edge_bytes": 5665,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      1
+    ],
+    "weighted_fresh_tick_utility": 5,
+    "physical_edge_ticks": 20,
+    "physical_edge_bytes": 5208,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      0,
+      1
+    ],
+    "weighted_fresh_tick_utility": 6,
+    "physical_edge_ticks": 26,
+    "physical_edge_bytes": 6612,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      2
+    ],
+    "weighted_fresh_tick_utility": 4,
+    "physical_edge_ticks": 21,
+    "physical_edge_bytes": 5723,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      0,
+      2
+    ],
+    "weighted_fresh_tick_utility": 6,
+    "physical_edge_ticks": 27,
+    "physical_edge_bytes": 7127,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      1,
+      2
+    ],
+    "weighted_fresh_tick_utility": 5,
+    "physical_edge_ticks": 25,
+    "physical_edge_bytes": 6670,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  },
+  {
+    "intermediate_destinations": [
+      0,
+      1,
+      2
+    ],
+    "weighted_fresh_tick_utility": 6,
+    "physical_edge_ticks": 31,
+    "physical_edge_bytes": 8074,
+    "primary_mip_gap": 0.0,
+    "secondary_mip_gap": 0.0
+  }
+]

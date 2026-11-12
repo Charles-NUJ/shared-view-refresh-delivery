@@ -1,0 +1,70 @@
+{
+  "id": "r40_storage_architecture_controls_r4_20261102",
+  "parent_protocol": "r40_architecture_structure_controls_r3_20261102",
+  "change_reason": "R3 showed that gather-once then broadcast wins 11 of 12 fixed high-overlap settings. R4 varies source key overlap, measures the result-to-partial size ratio, and tests the derived architecture boundary.",
+  "frozen_before_formal_run": true,
+  "seed": 20261101,
+  "sql_engine": "Python sqlite3 / SQLite",
+  "query": "SELECT key, SUM(value), COUNT(*) FROM facts WHERE epoch <= ? GROUP BY key ORDER BY key",
+  "sites": 6,
+  "versions": 8,
+  "rows_per_source_version": 240,
+  "keys_per_source": 48,
+  "key_layouts": [
+    {"id": "shared_100", "shared_fraction": 1.0, "structural_role": "fully overlapping group domains"},
+    {"id": "shared_50", "shared_fraction": 0.5, "structural_role": "mixed shared and source-private groups"},
+    {"id": "shared_20", "shared_fraction": 0.2, "structural_role": "near the n-1 result-size boundary"},
+    {"id": "shared_00", "shared_fraction": 0.0, "structural_role": "disjoint source group domains"}
+  ],
+  "version_period_ticks": 12,
+  "commit_jitter_ticks": 3,
+  "build_rows_per_tick": 480,
+  "install_delay_ticks": 1,
+  "declared_byte_rounding": 128,
+  "capacity_bytes_per_tick": [256, 512, 1024],
+  "topologies": ["line6", "ring6", "tree6", "mesh6"],
+  "roots": [0, 1, 2, 3, 4, 5],
+  "primary_lag_ticks": 24,
+  "rho_values": [0.8, 0.9, 0.95],
+  "warmup_ticks": 12,
+  "evaluation_tail_periods": [2, 4, 8, 16],
+  "primary_evaluation_tail_periods": 2,
+  "primary_window_reason": "The primary window ends one lag budget after the last source-commit frontier because primary_lag_ticks equals two version periods. Longer tails measure update-stop aging and remain sensitivity cases.",
+  "query_weights": [1, 2, 1, 3, 2, 1],
+  "random_seeds": [91001, 91002, 91003, 91004, 91005, 91006, 91007, 91008, 91009, 91010, 91011, 91012, 91013, 91014, 91015, 91016],
+  "direct_methods": [
+    {"id":"bulk_sp","legend":"Bulk-SP [1,2]","provenance":"Controlled complete-exchange specialization; not a reproduction of F1 Query or TQP.","source":["samwel2018f1","wu2025terabyte"]},
+    {"id":"fifo_sp","legend":"FIFO-SP [3]","provenance":"Oldest-ready specialization of the FIFO comparator evaluated by Labrinidis and Roussopoulos.","source":["labrinidis2001qoda"]},
+    {"id":"oldest_sp","legend":"Oldest-SP [4]","provenance":"Destination-age-first specialization of the highest-current-age principle; not a wireless-policy reproduction.","source":["kadota2018aoi"]},
+    {"id":"qoda_greedy","legend":"QoDA-Greedy [3]","provenance":"Popularity divided by positive remaining declared edge work; an R40 specialization, not native QoDA.","source":["labrinidis2001qoda"]},
+    {"id":"latest_sp","legend":"Latest-SP [4]","provenance":"Safe source-side replacement and closure priority on deterministic shortest paths.","source":["kadota2018aoi"]},
+    {"id":"greedy_minload","legend":"GreedyMinLoad (ours)","provenance":"Path-only ablation without version replacement.","source":[]},
+    {"id":"closure_minload","legend":"ClosureMinLoad (ours)","provenance":"Safe replacement and closure priority plus projected-maximum-edge-work path assignment.","source":[]},
+    {"id":"random16","legend":"Random-16 (ours, control)","provenance":"Best of sixteen frozen random orders and paths without version replacement.","source":[]},
+    {"id":"random_latest16","legend":"RandomLatest-16 (ours, control)","provenance":"Best of sixteen frozen random orders and paths with safe source-side replacement.","source":[]}
+  ],
+  "gather_broadcast_methods": [
+    {"id":"gather_broadcast_fifo","legend":"GatherBroadcast-FIFO [5,6]","provenance":"Reduce-to-one followed by broadcast, with FIFO transfer service and every version retained.","source":["mpi2015allreduce","thakur2005collectives"]},
+    {"id":"gather_broadcast_latest","legend":"GatherBroadcast-Latest (ours; [5,6] architecture)","provenance":"The literature-derived gather-broadcast architecture with our safe waiting-version replacement and closure priority.","source":["mpi2015allreduce","thakur2005collectives"]}
+  ],
+  "architecture_boundary": {
+    "partial_size_symbol": "p",
+    "result_size_symbol": "r",
+    "direct_logical_bytes": "n(n-1)p",
+    "gather_broadcast_logical_bytes": "(n-1)(p+r)",
+    "gather_broadcast_byte_condition": "r < (n-1)p",
+    "equality_policy": "choose the lower predicted maximum physical-edge work; then total bytes; then deterministic method id"
+  },
+  "freshness_reference": "The last source commit included in an installed version. The no-installed-version state never satisfies the lag target.",
+  "root_policy": "Run every site as root. Report the topology medoid as the executable default and the post-hoc best root as an explicit oracle.",
+  "replacement_rule": "A transfer may be discarded only while it is still waiting at its current creation source and a newer cumulative object for the same logical receiver is ready. In-flight and relayed transfers are preserved.",
+  "evaluation_order": ["query correctness", "final version installation", "rho=0.9 violation count", "rho=0.9 aggregate shortfall", "maximum edge work", "total edge bytes", "completion time"],
+  "references": [
+    {"number":1,"key":"samwel2018f1","title":"F1 Query: Declarative Querying at Scale","venue":"PVLDB 2018","url":"https://www.vldb.org/pvldb/vol11/p1835-samwel.pdf"},
+    {"number":2,"key":"wu2025terabyte","title":"Terabyte-Scale Analytics in the Blink of an Eye","venue":"PVLDB 2025","url":"https://www.vldb.org/pvldb/vol19/p141-sen.pdf"},
+    {"number":3,"key":"labrinidis2001qoda","title":"Update Propagation Strategies for Improving the Quality of Data on the Web","venue":"VLDB 2001","url":"https://www.vldb.org/conf/2001/P391.pdf"},
+    {"number":4,"key":"kadota2018aoi","title":"Scheduling Policies for Minimizing Age of Information in Broadcast Wireless Networks","venue":"IEEE/ACM ToN 2018","url":"https://www.mit.edu/~modiano/papers/CV_J_104.pdf"},
+    {"number":5,"key":"mpi2015allreduce","title":"MPI-3.1 Standard, All-Reduce","venue":"MPI Forum 2015","url":"https://www.mpi-forum.org/docs/mpi-3.1/mpi31-report/node117.htm"},
+    {"number":6,"key":"thakur2005collectives","title":"Optimization of Collective Communication Operations in MPICH","venue":"IJHPCA 2005","url":"https://ftp.mcs.anl.gov/pub/tech_reports/reports/P1140.pdf"}
+  ]
+}

@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 outputs/
+output/
+submission_figures/
+config.local.json
+artifact/exact_oracle/

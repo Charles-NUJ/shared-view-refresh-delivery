@@ -1,0 +1,263 @@
+{
+  "description": "Byte-for-byte copies of frozen experiment inputs and code and current audit sources; expected summaries are derived separately.",
+  "files": [
+    {
+      "path": "experiments/jcr/prepared/CONTRACT.json",
+      "sha256": "b90d95d9d957f92be7deddc7e253eeb644475e26ecac95ce0168efdf336a296b",
+      "bytes": 112035,
+      "origin": "raw_results/joint_calendar_20261019/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/jcr/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/joint_calendar_20261019/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/jcr/prepared/joint_calendar.py",
+      "sha256": "bece5bf4be39310fb30065a024085852a5f32a1faf3c0d82476f4cf5a7f2940d",
+      "bytes": 5669,
+      "origin": "raw_results/joint_calendar_20261019/prepared/joint_calendar.py"
+    },
+    {
+      "path": "experiments/jcr/prepared/run_joint_calendar.py",
+      "sha256": "06540c73a0bcc0181253fdb8f1a4b18c6862f32f0033873760a5902c2f0a38cb",
+      "bytes": 4415,
+      "origin": "raw_results/joint_calendar_20261019/prepared/run_joint_calendar.py"
+    },
+    {
+      "path": "experiments/tiny/prepared/CONTRACT.json",
+      "sha256": "c7923af2c5da294c72a6ffc6baeb0e05d6c08551cdfe458c7fe0d6f87621e6ca",
+      "bytes": 46629,
+      "origin": "raw_results/joint_validation_20261019/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/tiny/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/joint_validation_20261019/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/tiny/prepared/joint_calendar.py",
+      "sha256": "bece5bf4be39310fb30065a024085852a5f32a1faf3c0d82476f4cf5a7f2940d",
+      "bytes": 5669,
+      "origin": "raw_results/joint_validation_20261019/prepared/joint_calendar.py"
+    },
+    {
+      "path": "experiments/tiny/prepared/run_joint_validation.py",
+      "sha256": "b995d585a17ec5aa75edf2dfaba3a8268d4521c4b82ace2fd5f292b66681c809",
+      "bytes": 4530,
+      "origin": "raw_results/joint_validation_20261019/prepared/run_joint_validation.py"
+    },
+    {
+      "path": "experiments/rollout/prepared/CONTRACT.json",
+      "sha256": "b46e9783306ba348dd06cb85dc9545d8c8f86b2b42b9b56afca942d40f7ffcc5",
+      "bytes": 119075,
+      "origin": "raw_results/rollout_crp_20261022/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/rollout/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/rollout_crp_20261022/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/rollout/prepared/rollout_calendar.py",
+      "sha256": "ab0b9ae04ea58fb716913efd2eafc0fc21e1f6b7d11d73bef93d95ac46d9465b",
+      "bytes": 3029,
+      "origin": "raw_results/rollout_crp_20261022/prepared/rollout_calendar.py"
+    },
+    {
+      "path": "experiments/rollout/prepared/run_rollout_study.py",
+      "sha256": "ff8ae643f857cbc51057b1b1214748bcc6f3122f4f528e9fc29437f40f4e10f9",
+      "bytes": 6008,
+      "origin": "raw_results/rollout_crp_20261022/prepared/run_rollout_study.py"
+    },
+    {
+      "path": "experiments/controlled/prepared/CONTRACT.json",
+      "sha256": "71a7c157b793ca0186b0fa7cdbf812d572363cbe59b66123d97a4874aca3af54",
+      "bytes": 1057962,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/controlled/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/controlled/prepared/controlled_baselines.py",
+      "sha256": "727dad8c69f2752b2915cbc166b744396938a33fe0464fd2643e065768c10a70",
+      "bytes": 6080,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/controlled_baselines.py"
+    },
+    {
+      "path": "experiments/controlled/prepared/joint_calendar.py",
+      "sha256": "bece5bf4be39310fb30065a024085852a5f32a1faf3c0d82476f4cf5a7f2940d",
+      "bytes": 5669,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/joint_calendar.py"
+    },
+    {
+      "path": "experiments/controlled/prepared/rollout_calendar.py",
+      "sha256": "ab0b9ae04ea58fb716913efd2eafc0fc21e1f6b7d11d73bef93d95ac46d9465b",
+      "bytes": 3029,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/rollout_calendar.py"
+    },
+    {
+      "path": "experiments/controlled/prepared/run_controlled_comparison.py",
+      "sha256": "87fbafbd0808ce63089891a68edf726838f1af800280afe2c7df328735b21dc6",
+      "bytes": 5543,
+      "origin": "raw_results/controlled_comparison_20261022/prepared/run_controlled_comparison.py"
+    },
+    {
+      "path": "experiments/heldout/prepared/CONTRACT.json",
+      "sha256": "ce5565bc6e9379718af5bee9d1973550afe3cda9cff3b24d1255231b4116ebbd",
+      "bytes": 51760,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/heldout/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/heldout/prepared/controlled_baselines.py",
+      "sha256": "727dad8c69f2752b2915cbc166b744396938a33fe0464fd2643e065768c10a70",
+      "bytes": 6080,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/controlled_baselines.py"
+    },
+    {
+      "path": "experiments/heldout/prepared/joint_calendar.py",
+      "sha256": "bece5bf4be39310fb30065a024085852a5f32a1faf3c0d82476f4cf5a7f2940d",
+      "bytes": 5669,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/joint_calendar.py"
+    },
+    {
+      "path": "experiments/heldout/prepared/rollout_calendar.py",
+      "sha256": "ab0b9ae04ea58fb716913efd2eafc0fc21e1f6b7d11d73bef93d95ac46d9465b",
+      "bytes": 3029,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/rollout_calendar.py"
+    },
+    {
+      "path": "experiments/heldout/prepared/run_heldout_comparison.py",
+      "sha256": "e99011255c1655c4dc3f3bb49067ca9f2a71c479da1453c21ac4d298c3863e36",
+      "bytes": 3861,
+      "origin": "raw_results/heldout_same_domain_20261022/prepared/run_heldout_comparison.py"
+    },
+    {
+      "path": "experiments/feedback/prepared/CONTRACT.json",
+      "sha256": "b2ceb1e4e04c2fb136e02d24e294ac9efccb79d517241f29e8856a119b153f44",
+      "bytes": 233636,
+      "origin": "raw_results/feedback_jcr_20261019/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/feedback/prepared/contract_prune.py",
+      "sha256": "10be95dbd99927e02d27b72b0abb67f29408605b2ebaaad067d07ece878f0c99",
+      "bytes": 5986,
+      "origin": "raw_results/feedback_jcr_20261019/prepared/contract_prune.py"
+    },
+    {
+      "path": "experiments/feedback/prepared/feedback_jcr.py",
+      "sha256": "dbe670f1ccdaba8b449e0a481a3fa84e6ed9cd7d29aba381806362fdb04600de",
+      "bytes": 8895,
+      "origin": "raw_results/feedback_jcr_20261019/prepared/feedback_jcr.py"
+    },
+    {
+      "path": "experiments/feedback/prepared/joint_calendar.py",
+      "sha256": "bece5bf4be39310fb30065a024085852a5f32a1faf3c0d82476f4cf5a7f2940d",
+      "bytes": 5669,
+      "origin": "raw_results/feedback_jcr_20261019/prepared/joint_calendar.py"
+    },
+    {
+      "path": "experiments/feedback/prepared/run_feedback_study.py",
+      "sha256": "70eaddac259d05a296e8b1f8ff7959a4d790ffc81402237c15951ba39302c6d7",
+      "bytes": 9566,
+      "origin": "raw_results/feedback_jcr_20261019/prepared/run_feedback_study.py"
+    },
+    {
+      "path": "experiments/transport/prepared/CONTRACT.json",
+      "sha256": "375d820e37223a0d37186f1e9aad28f6fb7851ed6a7efff18081ff2d3f5e6fcb",
+      "bytes": 220657,
+      "origin": "raw_results/joint_tcp_20261019/prepared/CONTRACT.json"
+    },
+    {
+      "path": "experiments/transport/prepared/joint_tcp_receiver.py",
+      "sha256": "d3707918303358f9e9f2cf10c7489b1649d27265f0862e80d0c5e820e3997eea",
+      "bytes": 2432,
+      "origin": "raw_results/joint_tcp_20261019/prepared/joint_tcp_receiver.py"
+    },
+    {
+      "path": "experiments/transport/prepared/physical_whole_closure_worker.py",
+      "sha256": "f7d943743f15af734f4bfe57a646723463b3b3742fa914fec8e3e32f4042c4ca",
+      "bytes": 23106,
+      "origin": "raw_results/joint_tcp_20261019/prepared/physical_whole_closure_worker.py"
+    },
+    {
+      "path": "experiments/transport/prepared/run_joint_tcp.py",
+      "sha256": "271ede0a2d7d79ebfb5c9e63f04a7ded087543cc1fee49f16a77eb81f3d29e05",
+      "bytes": 8671,
+      "origin": "raw_results/joint_tcp_20261019/prepared/run_joint_tcp.py"
+    },
+    {
+      "path": "inputs/cases/synthetic_7101/versions.csv",
+      "sha256": "a53d49054509413582d3822fef485afa2faa04b023aa5f54a4e9a58951b9bc7f",
+      "bytes": 213480,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7101/versions.csv"
+    },
+    {
+      "path": "inputs/cases/synthetic_7101/zones.csv",
+      "sha256": "2adfad9d9c1970b6cb2ed1750e9337f2ab533d60cd8e3faa27dcf90e662f0703",
+      "bytes": 248,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7101/zones.csv"
+    },
+    {
+      "path": "inputs/cases/synthetic_7102/versions.csv",
+      "sha256": "c5dc38073f1d2ad65717a56bfb36fcbdb2907daab86eba2f2078b6d74b3e2f50",
+      "bytes": 213996,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7102/versions.csv"
+    },
+    {
+      "path": "inputs/cases/synthetic_7102/zones.csv",
+      "sha256": "2adfad9d9c1970b6cb2ed1750e9337f2ab533d60cd8e3faa27dcf90e662f0703",
+      "bytes": 248,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7102/zones.csv"
+    },
+    {
+      "path": "inputs/cases/synthetic_7103/versions.csv",
+      "sha256": "35a1cb5118eb3c3152fa8826f3ea4e24f3d129a13a2492c60b46afe788454d6d",
+      "bytes": 214329,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7103/versions.csv"
+    },
+    {
+      "path": "inputs/cases/synthetic_7103/zones.csv",
+      "sha256": "2adfad9d9c1970b6cb2ed1750e9337f2ab533d60cd8e3faa27dcf90e662f0703",
+      "bytes": 248,
+      "origin": "raw_results/m1_main_20261014/inputs/cases/synthetic_7103/zones.csv"
+    },
+    {
+      "path": "checks/audit_joint_calendar.py",
+      "sha256": "1db1ff3a5e62696c80d7666bb926cd36d1fc4937b293c29755b2730c853b7071",
+      "bytes": 5631,
+      "origin": "src/audit_joint_calendar.py"
+    },
+    {
+      "path": "checks/audit_joint_tcp.py",
+      "sha256": "fb9c97b4cb49fb9cfd4f85ec4cbeacb47f3d75809bec36a89712c1059f26f38d",
+      "bytes": 5467,
+      "origin": "src/audit_joint_tcp.py"
+    },
+    {
+      "path": "checks/audit_origin_sharing.py",
+      "sha256": "b340c3808357c3771735dc503f82204887ab151171457efb83a3f106a56df239",
+      "bytes": 8254,
+      "origin": "src/audit_origin_sharing.py"
+    },
+    {
+      "path": "checks/audit_bundle_calendar.py",
+      "sha256": "88763fc092f401071a409434b2c6a3dc11ab0407428c5abe7ebe0d76f2d81658",
+      "bytes": 8767,
+      "origin": "src/audit_bundle_calendar.py"
+    }
+  ]
+}

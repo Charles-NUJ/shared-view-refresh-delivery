@@ -1,0 +1,4 @@
+regime,method,seed,completion_seconds_from_first_release,link_payload_bytes,visible_installs,dropped_waiting_messages,gate_activated,overlap_observed
+conservative_clear_1p50,adaptive,7101,14.050804400001653,2839275,30,0,false,false
+conservative_clear_1p50,adaptive,7102,13.875000600004569,2838540,30,0,false,false
+conservative_clear_1p50,adaptive,7103,13.924274500001047,2838695,30,0,false,false

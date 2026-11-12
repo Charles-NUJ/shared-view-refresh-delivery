@@ -1,95 +1,61 @@
-# Shared View Refresh and Delivery
+# Pressure-Gated Version Coalescing for Multi-Site Materialized Aggregates
 
-This repository contains code and experiment contracts for joint reduction of
-refresh and delivery work for shared materialized views. It studies a feasible,
-unissued calendar with fixed capture epochs and command starts. Decisions remove
-recipient copies and the source work that becomes unnecessary while preserving
-declared freshness budgets and reserved resource intervals.
+This repository contains the reproducibility artifact for the paper *Pressure-Gated Version Coalescing for Multi-Site Materialized Aggregates*.
 
-* **JCR** formulates the reduction as a mixed-integer optimization problem.
-* **CRP** performs sequential feasible deletions.
-* **RCRP** performs a one-step rollout over CRP and retains the CRP solution as a
-  candidate. Its cost comparison is with this base policy in the stated domain.
+## Problem
 
-The guarantees depend on the assumptions in the model, including valid resource
-bounds and the stated installation conditions. They do not establish global
-optimality over new capture times or command starts, or a production latency SLA.
+A multi-site analysis service refreshes one shared materialized aggregate from source fragments stored at different sites. A site installs version `k` after all source fragments for that version arrive. When cumulative versions overlap on shared links, sending every intermediate object repeats transfer work. Removing every intermediate version can also lose a useful query-visible closure.
 
-## Requirements
+PG-VCR uses released information. It follows FIFO while the declared work of every observed version is below one refresh period of bottleneck-link capacity. Once an observed version reaches that load boundary, PG-VCR coalesces covered objects that have not started service and orders retained objects by query impact per positive remaining link work. Every installation still requires a complete same-version manifest.
 
-The included experiment workers were prepared for Python 3.11, NumPy 1.24.3,
-and SciPy 1.11.1 with the HiGHS solver bundled in SciPy. Install dependencies in
-a virtual environment:
+## Repository layout
+
+- `artifact/pg_vcr/`: controlled PG-VCR study over six-site line, ring, tree, and mesh overlays.
+- `artifact/two_version_exact/`: exact heterogeneous two-version line instance used to study intermediate-version selection.
+- `artifact/three_host/`: SQLite/TCP three-host line worker and compact result summaries.
+- `legacy_joint_calendar/`: earlier fixed-calendar JCR/CRP/RCRP prototype, preserved for provenance. It is separate from the current PG-VCR evidence.
+
+## Environment
+
+The artifact uses Python 3.11 and the packages in `requirements.txt`.
 
 ```bash
 python -m venv .venv
-# Activate .venv using the command for your operating system.
 python -m pip install -r requirements.txt
 ```
 
-## Run experiments
+## Controlled PG-VCR study
 
 ```bash
-python reproduce.py verify
-python reproduce.py tiny
-python reproduce.py rollout
-python reproduce.py jcr
-python reproduce.py heldout
-python reproduce.py controlled
-python reproduce.py feedback
-python reproduce.py transport
-python audit.py jcr
-python audit.py transport
+python artifact/pg_vcr/run_pressure_gate.py \
+  --protocol artifact/pg_vcr/protocol.json \
+  --output artifact/pg_vcr/output
+python artifact/pg_vcr/verify_output.py
 ```
 
-Every command creates a fresh directory under `outputs/`. Use `--output PATH`
-to select a different, nonexistent output directory. For suites other than
-`feedback`, use `--limit N` for a smoke check on the first N cases; this does
-not reproduce the full contract. The feedback worker requires its full contract
-for boundary checks.
-The runner invokes a copied, frozen worker with paths set for the local output;
-the original worker scripts contain their historical workspace paths and should
-be run through `reproduce.py`.
+The full study contains 1,296 executions from three demand profiles, four key-sharing layouts, four six-site topologies, three link capacities, and nine fixed method variants. The frozen verification record contains 1,296 unique cases, zero incorrect installations, and zero missing final-version installations.
 
-Each output contains the worker's results and a `REPRODUCTION_RECEIPT.json`
-comparing selected objective values, status, or payload counts with stored
-summaries. Runtime, exact solver tie choices, and physical timing are not
-compared. The separate audit scripts reconstruct JCR model rows and SQL/SQLite
-results for the respective completed full runs. A mismatch or an interrupted
-worker requires investigation; a passing comparison does not replace
-mathematical proof or an independent-host study.
+Across the 144 matched contexts, the frozen results record PG-VCR leading, tying, and trailing FIFO-SP in 102, 36, and 6 contexts. PG-VCR leads the QoDA-derived greedy comparator in 100 contexts. The comparison applies the same correctness, freshness, bottleneck-work, byte, and completion order to every method.
 
-| Suite | Contents |
-| --- | --- |
-| `tiny` | Enumeration and JCR comparison on 18 small constructed contracts. |
-| `jcr` | Fixed-calendar JCR and CRP cases, plus weak-scale contracts. |
-| `rollout` | RCRP and CRP on 12 design cases and 18 previously generated small contracts. |
-| `heldout` | Same-domain comparisons on those 18 small contracts. |
-| `controlled` | One-factor-at-a-time comparisons on 192 contracts. |
-| `feedback` | Constructed execution-feedback and bounded-source-cost cases. |
-| `transport` | Local SQL, loopback TCP, and SQLite installation sessions using synthetic input. |
+Stored reference outputs are under `artifact/pg_vcr/expected/`. A new execution writes a separate output directory.
 
-The same-domain comparators include adaptations made for this problem. They are
-not presented as reproductions of iShare, BIGSHARED, QoDA, Tempura, or Agamotto.
-The small held-out contracts were generated previously; they are not independent
-production workloads. The transport suite uses two local processes with logical
-time labels and does not measure an interhost or production freshness guarantee.
+## Exact two-version instance
 
-## Artifact scope and provenance
+```bash
+python artifact/two_version_exact/run_two_version_exact.py
+python artifact/two_version_exact/verify_two_version_exact.py
+```
 
-`experiments/*/prepared/` contains the frozen inputs and workers used for the
-listed experiments. `checks/` contains separate audit code.
-`inputs/cases/` contains the synthetic SQL input required
-by the local transport experiment. `SOURCE_MANIFEST.json` records SHA-256 hashes
-of these copied files, and `experiments/*/expected.json` contains selected
-summaries from the original results for comparison.
+This finite offline model jointly selects complete destination closures and schedules transfers over heterogeneous fixed-path links. It first maximizes weighted fresh-query time and then minimizes occupied edge time among those optima. The model is an exact small-instance reference, while PG-VCR is the causal online method.
 
-This is an initial code release. It does not yet contain every experiment,
-full raw output, third-party dataset, or manuscript artifact. Results should be
-interpreted within the described experimental contracts. See the paper for the
-precise model and assumptions.
+## Three-host line
+
+`artifact/three_host/` contains the coordinator and SQLite/TCP site agent used for the three-site line study. Copy `config.example.json` to a private local file and replace its address and path placeholders. Machine addresses, credentials, and private paths are intentionally absent from this repository.
+
+## Scope
+
+The controlled study assumes positive known link rates, fixed paths, released upward-rounded object sizes, cumulative versions, and dense all-site demand. The exact reference has full knowledge of its finite input. Claims about PG-VCR apply to the causal method and the stated information structure.
 
 ## License
 
-A license has not yet been selected by the authors. Public visibility does not
-itself grant an open-source license.
+No software license has been selected. Public visibility alone does not grant permission to reuse or redistribute the source.

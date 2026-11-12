@@ -1,0 +1,18 @@
+{
+  "state": "PASS",
+  "scope": "A-B-C fixed paths, two cumulative versions, intermediate optional, final mandatory",
+  "objective": "maximize fresh query-visible ticks; among optima minimize actual physical edge ticks",
+  "input_hashes": {
+    "demand_manifest": "8C29AF164B683789118E776EAAF7EED4E0AF92845A62015BF5549A267C20A5AE",
+    "central_results": "0A93032E753408AED853E84A5CDDE6035AF045BB1EF1B8907537130EA5A85A10",
+    "runner": "EFD99618AA55895E09EAA1212787C1356435D5BB4EE0316927785F28780FF67F"
+  },
+  "output_hashes": {
+    "results": "14A4D474DF602CCD103839C8752E6A0499E703A3374A43CB7CD6CC69C28A6DCB",
+    "intermediate_subset_enumeration": "4A0CEF018FFDC435E3F8D7589A4B318B63C38F27202AF2D60517E503496D1482"
+  },
+  "software": {
+    "python": "3.11.5",
+    "scipy": "1.11.1"
+  }
+}
